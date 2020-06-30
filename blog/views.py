@@ -36,7 +36,7 @@ def signup(request):
 
             to_email = Convert(form.cleaned_data.get('email'))
             print(to_email)
-            send_mail('test', message ,'najay357@gmail.com', to_email, fail_silently=False)
+            send_mail('test', message ,'company@mail.com', to_email, fail_silently=False)
             
             return HttpResponse('Please confirm your email address to complete the registration')
     else:
